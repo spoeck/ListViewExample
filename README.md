@@ -8,5 +8,5 @@ Handle sections with different row formatting.
 # Usage
 
 just import the compononent and use it like usual:
-<ListViewExample></ListViewExample>
+``` <ListViewExample></ListViewExample> ```
 
