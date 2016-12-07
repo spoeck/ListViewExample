@@ -47,17 +47,17 @@ export default class ListViewExample extends React.Component {
         let rowIDs = [];
 
         // handle sections
-        for (let i = 0; i < this.data.length; ++i) {
-            sectionIDs.push(this.data[i].section);
+        for (let i = 0; i < data.length; ++i) {
+            sectionIDs.push(data[i].section);
 
             // handle row data
             rowIDs[i] = [];
-            for (let j = 0; j < this.data[i].rows.length; ++j) {
+            for (let j = 0; j < data[i].rows.length; ++j) {
                 // add an unique row id
                 rowIDs[i].push(dataBlob.length + j);
             }
             // append row data to dataBlob
-            dataBlob.push(...this.data[i].rows);
+            dataBlob.push(...data[i].rows);
         }
 
         if (!this.dataSource) {
